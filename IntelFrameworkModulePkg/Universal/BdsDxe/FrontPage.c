@@ -815,6 +815,8 @@ GetDeviceNameFromProduct (
     StrCatS (*DeviceName, 0x60 / sizeof (CHAR16), L"Acer Chromebook C720");
   } else if (!StrCmp(Product, L"Quawks")) {
     StrCatS (*DeviceName, 0x60 / sizeof (CHAR16), L"Asus Chromebook C300");
+  } else if (!StrCmp(Product, L"Rammus")) {
+    StrCatS (*DeviceName, 0x60 / sizeof (CHAR16), L"Asus Chromebook C425TA/C434TA");
   } else if (!StrCmp(Product, L"Reks")) {
     StrCatS (*DeviceName, 0x60 / sizeof (CHAR16), L"Lenovo N22 Chromebook");
   } else if (!StrCmp(Product, L"Relm")) {
