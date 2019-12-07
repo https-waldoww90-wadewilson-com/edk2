@@ -64,7 +64,7 @@ typedef struct _USB_DEV_CONTEXT      USB_DEV_CONTEXT;
 // TRSTRCY delay requirement in usb 2.0 spec chapter 7.1.7.5.
 // The unit is microsecond, setting it as 10ms.
 //
-#define XHC_RESET_RECOVERY_DELAY     (10 * 1000)
+#define XHC_RESET_RECOVERY_DELAY     (250 * 1000)
 //
 // XHC async transfer timer interval, set by experience.
 // The unit is 100us, takes 1ms as interval.

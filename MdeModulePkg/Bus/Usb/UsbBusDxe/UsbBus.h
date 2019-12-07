@@ -109,7 +109,7 @@ typedef struct _USB_HUB_API    USB_HUB_API;
 // Wait for port recovery to accept SetAddress, refers to specification
 // [USB20-7.1.7.5, it says 10 ms for TRSTRCY]
 //
-#define USB_SET_PORT_RECOVERY_STALL    (10 * USB_BUS_1_MILLISECOND)
+#define USB_SET_PORT_RECOVERY_STALL    (150 * USB_BUS_1_MILLISECOND)
 
 //
 // Wait for clear roothub port reset, set by experience
