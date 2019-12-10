@@ -674,6 +674,7 @@ XhcRecoverHaltedEndpoint (
   //
   // 2)Set dequeue pointer
   //
+  gBS->Stall (XHC_RESET_RECOVERY_DELAY);
   Status = XhcSetTrDequeuePointer(Xhc, SlotId, Dci, Urb);
   if (EFI_ERROR(Status)) {
     DEBUG ((EFI_D_ERROR, "XhcRecoverHaltedEndpoint: Set Transfer Ring Dequeue Pointer Failed, Status = %r\n", Status));
